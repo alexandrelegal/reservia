@@ -57,15 +57,15 @@ body {
 }
 
 .header .nav .nav-menu .nav-element.nav-active {
-    border-top: 2px solid #0065FC;
+    border-top: 2px solid #0065fc;
 }
 
 header .nav .nav-menu .nav-element:not(:nth-child(3)):hover {
-    border-top: 2px solid #0065FC;
+    border-top: 2px solid #0065fc;
 }
 
 header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
-    color: #0065FC;
+    color: #0065fc;
 }
 
 /* Link in li */
@@ -75,11 +75,11 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
 }
 
 .header .nav .nav-menu .nav-element.nav-active .nav-link {
-    color: #0065FC;
+    color: #0065fc;
 }
 
 .header .nav .nav-menu .nav-element.nav-highlight .nav-link {
-    color: #0065FC;
+    color: #0065fc;
     font-weight: bold;
 }
 
@@ -94,7 +94,7 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
     border-bottom-left-radius: 5px;
     height: 100%;
     width: 50px;
-    background: #F2F2F2;
+    background: #f2f2f2;
 }
 
 .search-bar span i {
@@ -108,8 +108,8 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
 .search-bar input {
     height: 50px;
     border: none;
-    border-top: 1px solid #F2F2F2;
-    border-bottom: 1px solid #F2F2F2;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
     min-width: 240px;
     font-size: 1em;
     padding-left: 10px;
@@ -122,7 +122,7 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
 
 .search-bar button {
     height: 50px;
-    background-color: #0065FC;
+    background-color: #0065fc;
     color:white;
     box-shadow: none;
     border: none;
@@ -167,8 +167,8 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
 }
 
 .flr .flr-list .flr-element .flr-t span:nth-child(1) {
-    color:#0065FC;
-    background-color: #DEEBFF;
+    color:#0065fc;
+    background-color: #deebff;
     height: 100%;
     width: 50px;
     border-radius: 50%;
@@ -212,7 +212,7 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
     font-weight: 700;
     font-size: 1em;
     padding: 15px 15px 15px 55px;
-    border: 2px solid #F2F2F2;
+    border: 2px solid #f2f2f2;
     border-radius: 50px;
 }
 
@@ -225,7 +225,7 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
 }
 
 .results .infolabel span {
-    border: 2px solid #F2F2F2;
+    border: 2px solid #f2f2f2;
     border-radius: 50%;
     height: 20px;
     width: 20px;
@@ -239,7 +239,7 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
     position: absolute;
     left: 6px;
     top: 2px;
-    color: #0065FC;
+    color: #0065fc;
 }
 
 .results .hosting {
@@ -249,7 +249,7 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
 }
 
 .results .hosting .row {
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
     border-radius: 13px;
     position: relative;
 }
@@ -336,12 +336,12 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
 }
 
 .results .hosting .row .h-group .h-element .h-content i {
-    color: #F2F2F2;
+    color: #f2f2f2;
     font-size: 0.9em;
 }
 
 .results .hosting .row .h-group .h-element .h-content i.hl {
-    color: #0065FC;
+    color: #0065fc;
 }
 
 .results .hosting .row .ph-group {
@@ -395,12 +395,12 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
 }
 
 .results .hosting .row .ph-group .ph-element .ph-content .ph-rating i {
-    color: #F2F2F2;
+    color: #f2f2f2;
     font-size: 0.9em;
 }
 
 .results .hosting .row .ph-group .ph-element .ph-content .ph-rating i.hl {
-    color: #0065FC;
+    color: #0065fc;
 }
 
 .activities {
@@ -489,7 +489,7 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
 .footer {
     padding-top: 35px;
     padding-bottom: 50px;
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
 }
 
 .footer .app-container {
