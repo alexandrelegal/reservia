@@ -70,10 +70,6 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover {
   border-top: 2px solid #0065fc;
 }
 
-header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
-  color: #0065fc;
-}
-
 /* Link in li */
 .header .nav .nav-menu .nav-element .nav-link {
   text-decoration: none;
@@ -87,6 +83,10 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
 .header .nav .nav-menu .nav-element.nav-highlight .nav-link {
   color: #0065fc;
   font-weight: bold;
+}
+
+header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
+  color: #0065fc;
 }
 
 .search-bar {
@@ -182,22 +182,6 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
   left: 0;
 }
 
-.flr .flr-list .flr-element:nth-child(2) .flr-t span:nth-child(1) i {
-  margin-left: 11px;
-  margin-top: 12px;
-  width: 40px;
-  height: 40px;
-  font-size: 1.5em;
-}
-
-.flr .flr-list .flr-element:nth-child(3) .flr-t span:nth-child(1) i {
-  margin-left: 16px;
-  margin-top: 12px;
-  width: 40px;
-  height: 40px;
-  font-size: 1.5em;
-}
-
 .flr .flr-list .flr-element:nth-child(4) .flr-t span:nth-child(1) i {
   margin-left: 13px;
   margin-top: 13px;
@@ -212,14 +196,6 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
   width: 40px;
   height: 40px;
   font-size: 1.5em;
-}
-
-.flr .flr-list .flr-element .flr-t span:nth-child(2) {
-  font-weight: 700;
-  font-size: 1em;
-  padding: 15px 15px 15px 55px;
-  border: 2px solid #f2f2f2;
-  border-radius: 50px;
 }
 
 .results {
@@ -246,6 +222,14 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
   left: 6px;
   top: 2px;
   color: #0065fc;
+}
+
+.flr .flr-list .flr-element .flr-t span:nth-child(2) {
+  font-weight: 700;
+  font-size: 1em;
+  padding: 15px 15px 15px 55px;
+  border: 2px solid #f2f2f2;
+  border-radius: 50px;
 }
 
 .results .hosting {
@@ -348,6 +332,22 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
 
 .results .hosting .row .h-group .h-element .h-content i.hl {
   color: #0065fc;
+}
+
+.flr .flr-list .flr-element:nth-child(2) .flr-t span:nth-child(1) i {
+  margin-left: 11px;
+  margin-top: 12px;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5em;
+}
+
+.flr .flr-list .flr-element:nth-child(3) .flr-t span:nth-child(1) i {
+  margin-left: 16px;
+  margin-top: 12px;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5em;
 }
 
 .results .hosting .row .ph-group {
