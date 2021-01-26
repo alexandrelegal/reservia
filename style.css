@@ -22,7 +22,7 @@ body {
 }
 
 .app-container {
-    margin: 0px 50px 0px 50px;
+    margin: 0 50px 0 50px;
 }
 
 .header {
@@ -43,9 +43,9 @@ body {
 /* Ul */
 .header .nav .nav-menu {
     list-style-type: none;
-    padding-inline-start: 0px;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
     margin: auto;
 }
 
@@ -53,7 +53,7 @@ body {
 .header .nav .nav-menu .nav-element {
     float: left;
     margin-left: 20px;
-    padding: 60px 20px 0px 20px;
+    padding: 60px 20px 0 20px;
 }
 
 .header .nav .nav-menu .nav-element.nav-active {
@@ -173,7 +173,7 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
     width: 50px;
     border-radius: 50%;
     position: absolute;
-    left: 0px;
+    left: 0;
 }
 
 .flr .flr-list .flr-element:nth-child(2) .flr-t span:nth-child(1) i {
@@ -372,7 +372,7 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
 
 .results .hosting .row .ph-group .ph-element .ph-content {
     left: 145px;
-    top: 0px;
+    top: 0;
     position: absolute;
 }
 
