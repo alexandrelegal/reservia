@@ -9,8 +9,8 @@
 }
 
 p,h1,h2,h3,h4,h5,a{
-    margin-block-start: .3em;
-    margin-block-end: .3em;
+    margin-block-start: 0.3em;
+    margin-block-end: 0.3em;
 }
 
 body{
@@ -235,7 +235,7 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link{
 }
 
 .results .infolabel span i{
-    font-size: .7em;
+    font-size: 0.7em;
     position: absolute;
     left: 6px;
     top: 2px;
@@ -324,7 +324,7 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link{
 
 .results .hosting .row .h-group .h-element .h-content .h-desc{
     margin-top: 10px;
-    font-size: .95em;
+    font-size: 0.95em;
 }
 
 .results .hosting .row .h-group .h-element .h-content .h-desc span{
@@ -337,7 +337,7 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link{
 
 .results .hosting .row .h-group .h-element .h-content i{
     color: #F2F2F2;
-    font-size: .9em;
+    font-size: 0.9em;
 }
 
 .results .hosting .row .h-group .h-element .h-content i.hl{
@@ -382,7 +382,7 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link{
 }
 
 .results .hosting .row .ph-group .ph-element .ph-content .ph-desc{
-    font-size: .95em;
+    font-size: 0.95em;
     margin-top: 10px;
 }
 
@@ -396,7 +396,7 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link{
 
 .results .hosting .row .ph-group .ph-element .ph-content .ph-rating i{
     color: #F2F2F2;
-    font-size: .9em;
+    font-size: 0.9em;
 }
 
 .results .hosting .row .ph-group .ph-element .ph-content .ph-rating i.hl{
@@ -503,13 +503,13 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link{
 
 .footer .app-container .category .title{
     font-weight: bold;
-    font-size: .9em;
+    font-size: 0.9em;
     padding-bottom: 20px;
 }
 
 .footer .app-container .category .element{
     margin-top: 15px;
-    font-size: .9em;
+    font-size: 0.9em;
     text-decoration: none;
     color: black;
     display: block;
