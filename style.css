@@ -117,7 +117,7 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
 }
 
 .search-bar input:focus {
-    outline: none!important;
+    outline: none;
 }
 
 .search-bar button {
@@ -136,7 +136,7 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
 }
 
 .search-bar button:focus {
-    outline: none!important;
+    outline: none;
 }
 
 .flr {
