@@ -8,7 +8,13 @@
   box-sizing: border-box;
 }
 
-p,h1,h2,h3,h4,h5,a {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+a {
   margin-block-start: 0.3em;
   margin-block-end: 0.3em;
 }
