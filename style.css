@@ -34,7 +34,7 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   position: relative;
 }
 
@@ -93,14 +93,14 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
 }
 
 .search-bar {
-  margin-top: 20px;
+  margin-top: 22px;
   height: 50px;
   display: flex;
 }
 
 .search-bar span {
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
   height: 100%;
   width: 50px;
   background: #f2f2f2;
@@ -119,8 +119,9 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
   border: none;
   border-top: 1px solid #f2f2f2;
   border-bottom: 1px solid #f2f2f2;
-  min-width: 240px;
-  font-size: 1em;
+  width: 235px;
+  font-size: 1.1em;
+  letter-spacing: 0.6px;
   padding-left: 10px;
   font-weight: bold;
 }
@@ -138,8 +139,8 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
   cursor: pointer;
   padding: 15px;
   font-weight: bold;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
   font-size: 1em;
   width: 130px;
 }
@@ -249,17 +250,17 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
 
 .results .hosting .row:nth-child(1) {
   margin-right: 40px;
-  width: 880px;
-  padding: 45px 40px;
+  width: 70%;
+  padding: 40px 40px;
 }
 
 .results .hosting .row:nth-child(2) {
-  width: 420px;
+  width: 30%;
   padding: 45px 30px 30px 40px;
 }
 
 .results .hosting .row .label {
-  font-size: 1.3em;
+  font-size: 1.35em;
   font-weight: bold;
 }
 
@@ -306,17 +307,17 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
 }
 
 .results .hosting .row .h-group .h-element .h-content {
-  padding: 10px 15px;
+  padding: 0 15px 0 15px;
 }
 
 .results .hosting .row .h-group .h-element .h-content .h-title {
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 3px;
   font-size: 1em;
 }
 
 .results .hosting .row .h-group .h-element .h-content .h-desc {
-  margin-top: 10px;
+  margin-top: 5px;
   font-size: 0.95em;
 }
 
@@ -325,7 +326,7 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
 }
 
 .results .hosting .row .h-group .h-element .h-content .h-rating {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .results .hosting .row .h-group .h-element .h-content i {
@@ -359,12 +360,11 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
 }
 
 .results .hosting .row .ph-group .ph-element {
-  padding: 5px;
   padding-bottom: 0;
   background-color: #fff;
   border-radius: 15px;
   box-shadow:0 6px 12px 0 rgba(0,0,0,0.1),0 2px 12px 0 rgba(0,0,0,0.1) ;
-  position: relative;
+  display: flex;
 }
 
 .results .hosting .row .ph-group .ph-element:not(:nth-child(1)) {
@@ -372,6 +372,7 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
 }
 
 .results .hosting .row .ph-group .ph-element .ph-banner {
+  margin: 5px 0 5px 5px;
   height: 130px;
   width: 125px;
   object-fit: cover;
@@ -380,9 +381,9 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
 }
 
 .results .hosting .row .ph-group .ph-element .ph-content {
-  left: 145px;
   top: 0;
-  position: absolute;
+  position: relative;
+  margin-left: 5px;
 }
 
 .results .hosting .row .ph-group .ph-element .ph-content .ph-title {
@@ -406,6 +407,8 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
 .results .hosting .row .ph-group .ph-element .ph-content .ph-rating i {
   color: #f2f2f2;
   font-size: 0.9em;
+  bottom: 3px;
+  left: 0;
 }
 
 .results .hosting .row .ph-group .ph-element .ph-content .ph-rating i.hl {
@@ -533,9 +536,10 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
 }
 
 h1 {
-  font-size: 1.3em;
+  font-size: 1.35em;
 }
 
 p {
   font-size: 1em;
 }
+
