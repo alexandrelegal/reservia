@@ -28,22 +28,25 @@ body {
 }
 
 .app-container {
-  margin: 0 50px 0 50px;
+  margin: 0 56px 0 56px;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  position: relative;
 }
 
 .header .brand {
-  margin-top: 50px;
+  margin-top: 44px;
+  /*margin-left: 3px;*/
 }
 
 /* Navigation container */
 .header .nav {
   float: right;
+  /*margin-right: 5px;*/
 }
 
 /* Ul */
@@ -58,8 +61,8 @@ body {
 /* li */
 .header .nav .nav-menu .nav-element {
   float: left;
-  margin-left: 20px;
-  padding: 60px 20px 0 20px;
+  margin-left: 29px;
+  padding: 47px 20px 0 20px;
 }
 
 .header .nav .nav-menu .nav-element.nav-active {
