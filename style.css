@@ -27,15 +27,16 @@ body {
   overflow-x: hidden;
 }
 
-.app-container {
+.container,
+.app-container,
+.container.nav-container {
   margin: 0 56px 0 56px;
 }
 
 .header {
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   margin-bottom: 35px;
-  position: relative;
 }
 
 .header .brand {
@@ -88,17 +89,27 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover {
   font-weight: bold;
 }
 
-header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
+.header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
   color: #0065fc;
 }
 
-.search-bar {
+.header .nav-link-unique {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding: 47px 20px 0 20px;
+  display: block;
+  color: #0065fc;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.heading .search-bar {
   margin-top: 22px;
   height: 50px;
   display: flex;
 }
 
-.search-bar span {
+.heading .search-bar span {
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   height: 100%;
@@ -106,7 +117,7 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
   background: #f2f2f2;
 }
 
-.search-bar span i {
+.heading .search-bar span i {
   margin-left: 15px;
   margin-top: 12px;
   width: 40px;
@@ -114,7 +125,7 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
   font-size: 1.5em;
 }
 
-.search-bar input {
+.heading .search-bar input {
   height: 50px;
   border: none;
   border-top: 1px solid #f2f2f2;
@@ -126,11 +137,11 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
   font-weight: bold;
 }
 
-.search-bar input:focus {
+.heading .search-bar input:focus {
   outline: none;
 }
 
-.search-bar button {
+.heading .search-bar button {
   height: 50px;
   background-color: #0065fc;
   color:white;
@@ -145,38 +156,35 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
   width: 130px;
 }
 
-.search-bar button:focus {
+.heading .search-bar button:focus {
   outline: none;
 }
 
-.flr {
-  margin-top: 30px;
-}
-
-.flr .flr-list {
+.heading .flr-list {
   list-style-type: none;
   display: flex;
   padding-inline-start: 0;
+  margin-top: 30px;
 }
 
-.flr .flr-list .flr-element {
+.heading .flr-list .flr-element {
   margin-right: 25px;
   font-weight: 700;
   font-size: 1em;
 }
 
-.flr .flr-list .flr-element:nth-child(1) {
+.heading .flr-list .flr-element:nth-child(1) {
   padding:15px;
 }
 
-.flr .flr-list .flr-element .flr-t {
+.heading .flr-list .flr-element .flr-t {
   height: 50px;
   display: flex;
   position: relative;
   cursor: pointer;
 }
 
-.flr .flr-list .flr-element .flr-t span:nth-child(1) {
+.heading .flr-list .flr-element .flr-t span:nth-child(1) {
   color:#0065fc;
   background-color: #deebff;
   height: 100%;
@@ -186,31 +194,43 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
   left: 0;
 }
 
-.flr .flr-list .flr-element:nth-child(4) .flr-t span:nth-child(1) i {
-  margin-left: 13px;
-  margin-top: 13px;
+.heading .flr-list .flr-element .flr-t span:nth-child(1) i {
   width: 40px;
   height: 40px;
   font-size: 1.5em;
+  margin-top: 13px;
 }
 
-.flr .flr-list .flr-element:nth-child(5) .flr-t span:nth-child(1) i {
+.heading .flr-list .flr-element:nth-child(2) .flr-t span:nth-child(1) i {
+  margin-left: 10px;
+}
+
+.heading .flr-list .flr-element:nth-child(3) .flr-t span:nth-child(1) i {
+  margin-left: 16px;
+}
+
+.heading .flr-list .flr-element:nth-child(4) .flr-t span:nth-child(1) i {
+  margin-left: 13px;
+}
+
+.heading .flr-list .flr-element:nth-child(5) .flr-t span:nth-child(1) i {
   margin-left: 13px;
   margin-top: 12px;
-  width: 40px;
-  height: 40px;
-  font-size: 1.5em;
 }
 
-.results {
-  margin-top: 25px;
+.heading .flr-list .flr-element .flr-t span:nth-child(2) {
+  font-weight: 700;
+  font-size: 1em;
+  padding: 15px 15px 15px 55px;
+  border: 2px solid #f2f2f2;
+  border-radius: 50px;
 }
 
-.results .infolabel {
+.heading .infolabel {
   display: flex;
 }
 
-.results .infolabel span {
+.heading .infolabel span {
   border: 2px solid #f2f2f2;
   border-radius: 50%;
   height: 20px;
@@ -220,7 +240,7 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
   margin-right: 3px;
 }
 
-.results .infolabel span i {
+.heading .infolabel span i {
   font-size: 0.7em;
   position: absolute;
   left: 6px;
@@ -228,65 +248,57 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
   color: #0065fc;
 }
 
-.flr .flr-list .flr-element .flr-t span:nth-child(2) {
-  font-weight: 700;
-  font-size: 1em;
-  padding: 15px 15px 15px 55px;
-  border: 2px solid #f2f2f2;
-  border-radius: 50px;
-}
-
-.results .hosting {
+.hosting {
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
 }
 
-.results .hosting .row {
+.hosting .row {
   background-color: #f2f2f2;
   border-radius: 13px;
   position: relative;
 }
 
-.results .hosting .row:nth-child(1) {
+.hosting .row:nth-child(1) {
   margin-right: 40px;
   width: 70%;
   padding: 40px 40px;
 }
 
-.results .hosting .row:nth-child(2) {
+.hosting .row:nth-child(2) {
   width: 30%;
   padding: 45px 30px 30px 40px;
 }
 
-.results .hosting .row .label {
+.hosting .row .label {
   font-size: 1.35em;
   font-weight: bold;
 }
 
-.results .hosting .row .minilabel {
+.hosting .row .minilabel {
   font-size: 1em;
   font-weight: bold;
   margin-top: 35px;
   cursor: pointer;
 }
 
-.results .hosting .row .graphics {
+.hosting .row .graphics {
   margin-top: 5px;
   font-size: 1.3em;
   float: right;
 }
 
-.results .hosting .row .h-group {
+.hosting .row .h-group {
   display: flex;
   justify-content: space-between;
 }
 
-.results .hosting .row .h-group:not(:nth-child(1)) {
+.hosting .row .h-group:not(:nth-child(1)) {
   margin-top: 25px;
 }
 
-.results .hosting .row .h-group .h-element {
+.hosting .row .h-group .h-element {
   flex: 1;
   padding: 5px;
   background-color: #fff;
@@ -294,11 +306,11 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
   box-shadow:0 6px 12px 0 rgba(0,0,0,0.1),0 2px 12px 0 rgba(0,0,0,0.1) ;
 }
 
-.results .hosting .row .h-group .h-element:not(:nth-child(1)) {
+.hosting .row .h-group .h-element:not(:nth-child(1)) {
   margin-left: 25px;
 }
 
-.results .hosting .row .h-group .h-element .h-banner {
+.hosting .row .h-group .h-element .h-banner {
   width: 100%;
   height: 115px;
   border-top-left-radius: 10px;
@@ -306,35 +318,35 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
   object-fit: cover;
 }
 
-.results .hosting .row .h-group .h-element .h-content {
+.hosting .row .h-group .h-element .h-content {
   padding: 0 15px 0 15px;
 }
 
-.results .hosting .row .h-group .h-element .h-content .h-title {
+.hosting .row .h-group .h-element .h-content .h-title {
   font-weight: bold;
   margin-top: 3px;
   font-size: 1em;
 }
 
-.results .hosting .row .h-group .h-element .h-content .h-desc {
+.hosting .row .h-group .h-element .h-content .h-desc {
   margin-top: 5px;
   font-size: 0.95em;
 }
 
-.results .hosting .row .h-group .h-element .h-content .h-desc span {
+.hosting .row .h-group .h-element .h-content .h-desc span {
   font-weight: bold;
 }
 
-.results .hosting .row .h-group .h-element .h-content .h-rating {
+.hosting .row .h-group .h-element .h-content .h-rating {
   margin-top: 5px;
 }
 
-.results .hosting .row .h-group .h-element .h-content i {
+.hosting .row .h-group .h-element .h-content i {
   color: #f2f2f2;
   font-size: 0.9em;
 }
 
-.results .hosting .row .h-group .h-element .h-content i.hl {
+.hosting .row .h-group .h-element .h-content i.hl {
   color: #0065fc;
 }
 
@@ -354,12 +366,12 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
   font-size: 1.5em;
 }
 
-.results .hosting .row .ph-group {
+.hosting .row .ph-group {
   margin-top: 20px;
   display: block;
 }
 
-.results .hosting .row .ph-group .ph-element {
+.hosting .row .ph-group .ph-element {
   padding-bottom: 0;
   background-color: #fff;
   border-radius: 15px;
@@ -367,11 +379,11 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
   display: flex;
 }
 
-.results .hosting .row .ph-group .ph-element:not(:nth-child(1)) {
+.hosting .row .ph-group .ph-element:not(:nth-child(1)) {
   margin-top: 30px;
 }
 
-.results .hosting .row .ph-group .ph-element .ph-banner {
+.hosting .row .ph-group .ph-element .ph-banner {
   margin: 5px 0 5px 5px;
   height: 130px;
   width: 125px;
@@ -380,38 +392,38 @@ header .nav .nav-menu .nav-element:not(:nth-child(3)):hover .nav-link {
   border-bottom-left-radius: 15px;
 }
 
-.results .hosting .row .ph-group .ph-element .ph-content {
+.hosting .row .ph-group .ph-element .ph-content {
   top: 0;
   position: relative;
-  margin-left: 5px;
+  margin: 10px 10px 0 0;
 }
 
-.results .hosting .row .ph-group .ph-element .ph-content .ph-title {
+.hosting .row .ph-group .ph-element .ph-content .ph-title {
   font-weight: bold;
   font-size: 1em;
 }
 
-.results .hosting .row .ph-group .ph-element .ph-content .ph-desc {
+.hosting .row .ph-group .ph-element .ph-content .ph-desc {
   font-size: 0.95em;
   margin-top: 10px;
 }
 
-.results .hosting .row .ph-group .ph-element .ph-content .ph-desc span {
+.hosting .row .ph-group .ph-element .ph-content .ph-desc span {
   font-weight: bold;
 }
 
-.results .hosting .row .ph-group .ph-element .ph-content .ph-rating {
+.hosting .row .ph-group .ph-element .ph-content .ph-rating {
   padding-top: 50px;
 }
 
-.results .hosting .row .ph-group .ph-element .ph-content .ph-rating i {
+.hosting .row .ph-group .ph-element .ph-content .ph-rating i {
   color: #f2f2f2;
   font-size: 0.9em;
   bottom: 3px;
   left: 0;
 }
 
-.results .hosting .row .ph-group .ph-element .ph-content .ph-rating i.hl {
+.hosting .row .ph-group .ph-element .ph-content .ph-rating i.hl {
   color: #0065fc;
 }
 
@@ -543,3 +555,51 @@ p {
   font-size: 1em;
 }
 
+@media all and (max-width: 650px) {
+  .container.nav-container {
+    margin: 0 0 0 0;
+  }
+
+  .header {
+    display: block;
+  }
+
+  .header .brand {
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+
+  .header .nav {
+    width: 100%;
+    display: block;
+    margin: 20px 0;
+  }
+
+  .header .nav .nav-menu .nav-element {
+    width: 50%;
+    margin-left: 0;
+    text-align: center;
+    padding: 20px 20px 15px 20px;
+  }
+
+  header .nav .nav-menu .nav-element:not(:nth-child(3)):hover,
+  .header .nav .nav-menu .nav-element.nav-active,
+  .header .nav .nav-menu .nav-element:hover {
+    border-top: none;
+    border-bottom: 2px solid #0065fc;
+  }
+  
+
+  .header .nav-link-unique {
+    position: absolute;
+    top: 47px;
+    right: 76px;
+    padding: 0;
+  }
+}
+
+@media all and (min-width: 651px) {
+  .header .nav {
+    margin-left: auto;
+  }
+}
