@@ -43,6 +43,7 @@ body {
 .header .nav .nav-menu {
   list-style-type: none;
   margin: auto;
+  padding-inline-start: 0;
 }
 
 /* li */
